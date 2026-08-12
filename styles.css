@@ -1446,15 +1446,14 @@ section {
 @media (max-width: 992px) {
     /* Scroll Container - Solo mobile */
     .scroll-container {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         -ms-overflow-style: none;
         scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
+        margin: 0 -20px;
+        padding: 0 20px;
     }
     
     .scroll-container::-webkit-scrollbar {
@@ -1464,10 +1463,9 @@ section {
     .scroll-track {
         display: flex;
         flex-direction: row;
-        gap: 20px;
-        padding: 20px 20px 40px;
+        gap: 16px;
+        padding: 20px 0 40px;
         width: max-content;
-        scroll-snap-align: start;
     }
     
     .scroll-hint {
@@ -1475,47 +1473,31 @@ section {
     }
     
     /* Services horizontal scroll */
-    .services .scroll-track {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    
     .services .service-card {
-        width: 300px;
-        min-width: 300px;
-        max-width: 300px;
-        flex-shrink: 0;
-    }
-    
-    /* Features horizontal scroll */
-    .features .scroll-track {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    
-    .features .feature-card {
         width: 280px;
         min-width: 280px;
         max-width: 280px;
         flex-shrink: 0;
     }
     
-    /* Portfolio horizontal scroll */
-    .portfolio .scroll-track {
-        display: flex;
-        gap: 20px;
+    /* Features horizontal scroll */
+    .features .feature-card {
+        width: 260px;
+        min-width: 260px;
+        max-width: 260px;
+        flex-shrink: 0;
     }
     
+    /* Portfolio horizontal scroll */
     .portfolio .portfolio-item {
-        width: 300px;
-        min-width: 300px;
+        width: 280px;
+        min-width: 280px;
+        max-width: 280px;
         flex-shrink: 0;
     }
     
     .portfolio .portfolio-image {
-        height: 280px;
+        height: 200px;
     }
     
     .portfolio-filters {
@@ -1676,9 +1658,13 @@ section {
         padding: 0 16px;
     }
     
+    .scroll-container {
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
+    
     .scroll-track {
-        gap: 16px;
-        padding: 16px 16px 32px;
+        gap: 12px;
     }
     
     .services .service-card,
@@ -1690,7 +1676,7 @@ section {
     }
     
     .portfolio .portfolio-image {
-        height: 240px;
+        height: 180px;
     }
     
     .navbar {
