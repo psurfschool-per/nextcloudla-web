@@ -1418,27 +1418,311 @@ section {
         padding: 60px 0;
     }
     
+    .container {
+        padding: 0 16px;
+    }
+    
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
+    }
+    
+    .hero-badge {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+    
+    .hero-content {
+        padding: 100px 0 60px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-header p {
+        font-size: 15px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
     }
     
     .stat-number {
-        font-size: 36px;
+        font-size: 32px;
+    }
+    
+    .stat-label {
+        font-size: 14px;
+    }
+    
+    .stats-grid {
+        gap: 20px;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .feature-number {
+        font-size: 48px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .portfolio-image {
+        height: 220px;
+    }
+    
+    .portfolio-overlay {
+        padding: 20px;
+        opacity: 1;
     }
     
     .testimonial-card {
-        padding: 30px;
+        padding: 24px 20px;
     }
     
     .testimonial-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+    .quote-icon {
+        font-size: 36px;
+    }
+    
+    .testimonial-author img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .prev-btn,
+    .next-btn {
+        width: 40px;
+        height: 40px;
         font-size: 16px;
     }
     
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-content p {
+        font-size: 15px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+    }
+    
     .contact-form-wrapper {
-        padding: 24px;
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+    
+    .info-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .footer {
+        padding: 60px 0 0;
+    }
+    
+    .footer-grid {
+        gap: 30px;
+    }
+    
+    .footer-brand p {
+        font-size: 14px;
+    }
+    
+    .footer-links a {
+        font-size: 14px;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+    
+    .brand-text {
+        font-size: 20px;
+    }
+    
+    .logo {
+        height: 32px;
+    }
+    
+    .nav-menu {
+        width: 85%;
+        padding: 80px 30px 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .btn-lg {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+    
+    .stat-number {
+        font-size: 28px;
+    }
+    
+    .stat-icon {
+        font-size: 32px;
+    }
+    
+    .experience-badge {
+        padding: 16px 20px;
+    }
+    
+    .experience-badge .number {
+        font-size: 36px;
+    }
+    
+    .experience-badge .text {
+        font-size: 12px;
+    }
+}
+
+/* ===== Touch Device Optimizations ===== */
+@media (hover: none) and (pointer: coarse) {
+    .service-card:hover,
+    .feature-card:hover,
+    .portfolio-item:hover {
+        transform: none;
+    }
+    
+    .portfolio-overlay {
+        opacity: 1;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+    }
+    
+    .btn:hover,
+    .btn-primary:hover {
+        transform: none;
+    }
+    
+    .social-link:hover {
+        transform: none;
+    }
+}
+
+/* ===== Safe Area for Notch Devices ===== */
+@supports (padding: max(0px)) {
+    .navbar {
+        padding-left: max(24px, env(safe-area-inset-left));
+        padding-right: max(24px, env(safe-area-inset-right));
+    }
+    
+    .hero-content {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+    
+    .footer {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+}
+
+/* ===== Mobile Menu Overlay ===== */
+.nav-menu.active::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* ===== Mobile Touch Feedback ===== */
+@media (max-width: 768px) {
+    .filter-btn:active,
+    .btn:active,
+    .service-link:active,
+    .portfolio-link:active {
+        transform: scale(0.98);
+    }
+    
+    .nav-link:active {
+        background: rgba(3, 176, 222, 0.1);
+    }
+}
+
+/* ===== Prevent Horizontal Scroll ===== */
+html, body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* ===== Image Loading Optimization ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ===== Smooth Scrolling for Mobile ===== */
+@supports (-webkit-overflow-scrolling: touch) {
+    .hero-slider,
+    .testimonials-slider {
+        -webkit-overflow-scrolling: touch;
     }
 }
