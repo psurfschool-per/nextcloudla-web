@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NextCloud LA - Soluciones Digitales Innovadoras. Marketing Automation, Campañas Digitales, Desarrollo Web y Contenido Digital.">
+    <meta name="keywords" content="marketing digital, desarrollo web, campañas digitales, NextCloud, Perú">
+    <title>NextCloud LA - Soluciones Digitales Innovadoras</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://nextcloudla.com/assets/img/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://nextcloudla.com/assets/img/logo.png" alt="NextCloud Logo" class="logo">
+                <span class="brand-text">NextCloud<span class="text-accent">LA</span></span>
+            </a>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Servicios</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Características</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <a href="#contact" class="btn-nav">Contáctanos</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://nextcloudla.com/assets/img/nc_image_01.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('https://nextcloudla.com/assets/img/nc_image_02.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('https://nextcloudla.com/assets/img/nc_image_03.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('https://nextcloudla.com/assets/img/nc_image_04.jpg')"></div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-text animate__animated animate__fadeInUp">
+                <span class="hero-badge">Soluciones Digitales</span>
+                <h1>Transformamos tus ideas en <span class="text-gradient">soluciones digitales</span> innovadoras</h1>
+                <p>Somos expertos en marketing automation, campañas digitales, desarrollo web y contenido digital. Llevamos tu negocio al siguiente nivel.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span>Comenzar ahora</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-play-circle"></i>
+                        <span>Nuestros servicios</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-indicators">
+            <button class="slide-indicator active" data-slide="0"></button>
+            <button class="slide-indicator" data-slide="1"></button>
+            <button class="slide-indicator" data-slide="2"></button>
+            <button class="slide-indicator" data-slide="3"></button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#services">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Descubre más</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Lo que ofrecemos</span>
+                <h2>Nuestros <span class="text-accent">Servicios</span></h2>
+                <p>Soluciones integrales adaptadas a las necesidades de tu negocio</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="bi bi-envelope-paper"></i>
+                    </div>
+                    <h3>Marketing Automation</h3>
+                    <p>Automatiza tus campañas de email marketing con nuestra plataforma SaaS. Segmentación avanzada, flujos automatizados y analytics en tiempo real.</p>
+                    <ul class="service-features">
+                        <li><i class="bi bi-check-circle"></i> Email Marketing</li>
+                        <li><i class="bi bi-check-circle"></i> Lead Scoring</li>
+                        <li><i class="bi bi-check-circle"></i> Seguimiento automático</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Más información</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="bi bi-megaphone"></i>
+                    </div>
+                    <h3>Campañas Digitales</h3>
+                    <p>Estrategias efectivas para maximizar tu presencia digital. Campañas en redes sociales, Google Ads y marketing de contenidos.</p>
+                    <ul class="service-features">
+                        <li><i class="bi bi-check-circle"></i> Social Media Marketing</li>
+                        <li><i class="bi bi-check-circle"></i> Google Ads</li>
+                        <li><i class="bi bi-check-circle"></i> Content Marketing</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Más información</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web modernos y aplicaciones personalizadas. Desde landing pages hasta plataformas empresariales complejas.</p>
+                    <ul class="service-features">
+                        <li><i class="bi bi-check-circle"></i> Websites Responsivos</li>
+                        <li><i class="bi bi-check-circle"></i> E-commerce</li>
+                        <li><i class="bi bi-check-circle"></i> Aplicaciones Web</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Más información</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="bi bi-camera-video"></i>
+                    </div>
+                    <h3>Contenido Digital</h3>
+                    <p>Creación de contenido atractivo y relevante. Videos, imágenes, blogs y estrategias de contenido que conectan con tu audiencia.</p>
+                    <ul class="service-features">
+                        <li><i class="bi bi-check-circle"></i> Producción de Video</li>
+                        <li><i class="bi bi-check-circle"></i> Diseño Gráfico</li>
+                        <li><i class="bi bi-check-circle"></i> Copywriting</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Más información</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_02.jpg" alt="NextCloud Team">
+                        <div class="experience-badge">
+                            <span class="number">10+</span>
+                            <span class="text">Años de experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <span class="section-tag">Sobre nosotros</span>
+                    <h2>Líderes en <span class="text-accent">soluciones digitales</span></h2>
+                    <p class="lead">En NextCloud LA, transformamos ideas en realidades digitales. Somos un equipo de profesionales apasionados por la tecnología y el marketing digital.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Innovación Constante</h4>
+                                <p>Utilizamos las últimas tecnologías y tendencias del mercado.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Equipo Experto</h4>
+                                <p>Profesionales con experiencia en diversas industrias.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Resultados Medibles</h4>
+                                <p>Analytics avanzado para medir el ROI de cada campaña.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span>Conoce más</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-people"></i></div>
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-folder2-open"></i></div>
+                    <div class="stat-number" data-count="200">0</div>
+                    <div class="stat-label">Proyectos Completados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-trophy"></i></div>
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Premios Ganados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="bi bi-geo-alt"></i></div>
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">Países Atendidos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Por qué elegirnos</span>
+                <h2>Nuestras <span class="text-accent">Características</span></h2>
+                <p>Lo que nos hace diferentes y por qué nuestros clientes confían en nosotros</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-number">01</div>
+                    <h3>Estrategia Personalizada</h3>
+                    <p>Cada proyecto es único. Desarrollamos estrategias a medida según los objetivos específicos de tu negocio.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-number">02</div>
+                    <h3>Tecnología de Vanguardia</h3>
+                    <p>Utilizamos las herramientas más avanzadas del mercado para garantizar resultados excepcionales.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-number">03</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Nuestro equipo está disponible las 24 horas para atender tus consultas y resolver cualquier incidencia.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-number">04</div>
+                    <h3>Resultados Garantizados</h3>
+                    <p>Trabajamos con metas claras y KPIs medibles para asegurar el éxito de tu inversión.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-number">05</div>
+                    <h3>Experiencia Comprobada</h3>
+                    <p>Más de una década de experiencia trabajando con empresas de todos los tamaños y sectores.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-number">06</div>
+                    <h3>Precios Competitivos</h3>
+                    <p>Soluciones de alta calidad a precios justos. Maximizamos tu inversión digital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro trabajo</span>
+                <h2>Portafolio de <span class="text-accent">Proyectos</span></h2>
+                <p>Algunos de los proyectos que hemos realizado con éxito</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="content">Contenido</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-image">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_01.jpg" alt="Campaña Marketing">
+                        <div class="portfolio-overlay">
+                            <h4>Campaña Digital</h4>
+                            <p>Marketing Automation</p>
+                            <a href="#" class="portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_02.jpg" alt="Desarrollo Web">
+                        <div class="portfolio-overlay">
+                            <h4>E-commerce Premium</h4>
+                            <p>Desarrollo Web</p>
+                            <a href="#" class="portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="content">
+                    <div class="portfolio-image">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_03.jpg" alt="Contenido Digital">
+                        <div class="portfolio-overlay">
+                            <h4>Estrategia de Contenido</h4>
+                            <p>Contenido Digital</p>
+                            <a href="#" class="portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="marketing">
+                    <div class="portfolio-image">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_04.jpg" alt="Email Marketing">
+                        <div class="portfolio-overlay">
+                            <h4>Email Marketing</h4>
+                            <p>Marketing Automation</p>
+                            <a href="#" class="portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_01.jpg" alt="Portal Corporativo">
+                        <div class="portfolio-overlay">
+                            <h4>Portal Corporativo</h4>
+                            <p>Desarrollo Web</p>
+                            <a href="#" class="portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="content">
+                    <div class="portfolio-image">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_02.jpg" alt="Producción de Video">
+                        <div class="portfolio-overlay">
+                            <h4>Producción de Video</h4>
+                            <p>Contenido Digital</p>
+                            <a href="#" class="portfolio-link"><i class="bi bi-plus-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonios</span>
+                <h2>Lo que dicen nuestros <span class="text-accent">clientes</span></h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                        <p>"NextCloud LA transformó completamente nuestra presencia digital. Las campañas de marketing automation aumentaron nuestras ventas en un 150% en solo 3 meses."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_03.jpg" alt="Cliente">
+                        <div class="author-info">
+                            <h4>María García</h4>
+                            <span>CEO, TechPerú</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                        <p>"El equipo de desarrollo web creó una plataforma increíble para nuestra empresa. Profesionales, creativos y siempre entregando a tiempo."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_04.jpg" alt="Cliente">
+                        <div class="author-info">
+                            <h4>Carlos Mendoza</h4>
+                            <span>Director, InnovateLab</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                        <p>"La estrategia de contenido que diseñaron para nosotros es excepcional. Nuestro engagement en redes sociales se multiplicó por 4."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://nextcloudla.com/assets/img/nc_image_01.jpg" alt="Cliente">
+                        <div class="author-info">
+                            <h4>Ana Rodríguez</h4>
+                            <span>Marketing Manager, FashionStore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="prev-btn"><i class="bi bi-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para transformar tu negocio?</h2>
+                <p>Contáctanos hoy y descubre cómo podemos llevar tu empresa al siguiente nivel con nuestras soluciones digitales.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-light btn-lg">
+                        <span>Empezar ahora</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="tel:+51992749788" class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-telephone"></i>
+                        <span>+51 992 749 788</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-tag">Contacto</span>
+                    <h2>Hablemos de tu <span class="text-accent">proyecto</span></h2>
+                    <p>Estamos aquí para ayudarte. Escríbenos y te responderemos lo antes posible.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="bi bi-geo-alt"></i></div>
+                            <div class="info-content">
+                                <h4>Oficina Principal</h4>
+                                <p>NextCloud LA SAC</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon"><i class="bi bi-telephone"></i></div>
+                            <div class="info-content">
+                                <h4>Teléfono</h4>
+                                <p>+51 992 749 788</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon"><i class="bi bi-envelope"></i></div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>jmontoya@nextcloudla.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <span>Enviar mensaje</span>
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="https://nextcloudla.com/assets/img/logo-white.png" alt="NextCloud Logo">
+                    </a>
+                    <p>Transformando ideas en soluciones digitales desde 2014. Tu socio estratégico en el mundo digital.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Marketing Automation</a></li>
+                        <li><a href="#">Campañas Digitales</a></li>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Contenido Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Portafolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreras</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Estado del Sistema</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir las últimas noticias y ofertas.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit"><i class="bi bi-send"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NextCloud SAC - Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

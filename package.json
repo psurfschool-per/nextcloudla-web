@@ -1,0 +1,20 @@
+{
+  "name": "nextcloudla-web",
+  "version": "1.0.0",
+  "description": "NextCloud LA - Soluciones Digitales Innovadoras",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "nextcloud",
+    "marketing-digital",
+    "desarrollo-web"
+  ],
+  "author": "NextCloud LA SAC",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
