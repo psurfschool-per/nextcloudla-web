@@ -1458,8 +1458,8 @@ section {
         scrollbar-width: none;
         -ms-overflow-style: none;
         scroll-behavior: smooth;
-        margin: 0 -20px;
-        padding: 0 20px;
+        margin: 0 -24px;
+        padding: 0 24px;
     }
     
     .scroll-container::-webkit-scrollbar {
@@ -1471,7 +1471,7 @@ section {
         display: flex !important;
         flex-direction: row !important;
         gap: 16px;
-        padding: 20px 0 40px;
+        padding: 20px 4px 40px;
         width: max-content;
     }
     
@@ -1481,30 +1481,30 @@ section {
     
     /* Services horizontal scroll */
     .services .service-card {
-        width: 280px;
-        min-width: 280px;
-        max-width: 280px;
-        flex-shrink: 0;
-    }
-    
-    /* Features horizontal scroll */
-    .features .feature-card {
         width: 260px;
         min-width: 260px;
         max-width: 260px;
         flex-shrink: 0;
     }
     
+    /* Features horizontal scroll */
+    .features .feature-card {
+        width: 240px;
+        min-width: 240px;
+        max-width: 240px;
+        flex-shrink: 0;
+    }
+    
     /* Portfolio horizontal scroll */
     .portfolio .portfolio-item {
-        width: 280px;
-        min-width: 280px;
-        max-width: 280px;
+        width: 260px;
+        min-width: 260px;
+        max-width: 260px;
         flex-shrink: 0;
     }
     
     .portfolio .portfolio-image {
-        height: 200px;
+        height: 260px;
     }
     
     .portfolio-filters {
@@ -1662,12 +1662,12 @@ section {
     }
     
     .container {
-        padding: 0 16px;
+        padding: 0 20px;
     }
     
     .scroll-container {
-        margin: 0 -16px;
-        padding: 0 16px;
+        margin: 0 -20px;
+        padding: 0 20px;
     }
     
     .scroll-track {
@@ -1677,13 +1677,13 @@ section {
     .services .service-card,
     .features .feature-card,
     .portfolio .portfolio-item {
-        width: 260px;
-        min-width: 260px;
-        max-width: 260px;
+        width: 240px;
+        min-width: 240px;
+        max-width: 240px;
     }
     
     .portfolio .portfolio-image {
-        height: 180px;
+        height: 240px;
     }
     
     .navbar {
