@@ -449,12 +449,6 @@ section {
     }
 }
 
-@media (max-width: 992px) {
-    .services-grid {
-        display: none;
-    }
-}
-
 .service-card {
     background: var(--white);
     padding: 24px;
@@ -756,12 +750,6 @@ section {
     }
 }
 
-@media (max-width: 992px) {
-    .features-grid {
-        display: none;
-    }
-}
-
 .feature-card {
     background: var(--white);
     padding: 24px;
@@ -859,12 +847,6 @@ section {
 @media (max-width: 1024px) {
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    .portfolio-grid {
-        display: none;
     }
 }
 
@@ -1433,6 +1415,30 @@ section {
 }
 
 /* ===== Responsive ===== */
+
+/* Desktop: Restore grid layout */
+@media (min-width: 993px) {
+    .scroll-track {
+        display: grid !important;
+    }
+    
+    .scroll-hint {
+        display: none !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1460,9 +1466,10 @@ section {
         display: none;
     }
     
+    /* Override grid to flex on mobile */
     .scroll-track {
-        display: flex;
-        flex-direction: row;
+        display: flex !important;
+        flex-direction: row !important;
         gap: 16px;
         padding: 20px 0 40px;
         width: max-content;
