@@ -1372,14 +1372,14 @@ section {
 
 /* ===== Scroll Container ===== */
 .scroll-container {
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-behavior: smooth;
-    padding: 0 24px;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -1389,7 +1389,7 @@ section {
 .scroll-track {
     display: flex;
     gap: 24px;
-    padding: 20px 0 40px;
+    padding: 20px calc(50vw - 50% + 24px) 40px;
     width: max-content;
 }
 
@@ -1436,34 +1436,39 @@ section {
     
     .scroll-container {
         scroll-snap-type: x mandatory;
-        padding: 0 20px;
     }
     
     .scroll-track {
         scroll-snap-align: start;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     /* Services horizontal scroll */
     .services .scroll-track {
         display: flex;
+        flex-direction: row;
         gap: 20px;
     }
     
     .services .service-card {
         width: 300px;
         min-width: 300px;
+        max-width: 300px;
         flex-shrink: 0;
     }
     
     /* Features horizontal scroll */
     .features .scroll-track {
         display: flex;
+        flex-direction: row;
         gap: 20px;
     }
     
     .features .feature-card {
         width: 280px;
         min-width: 280px;
+        max-width: 280px;
         flex-shrink: 0;
     }
     
@@ -1646,11 +1651,14 @@ section {
     }
     
     .scroll-container {
-        padding: 0 16px;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
     }
     
     .scroll-track {
         gap: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
     .services .service-card,
@@ -1658,6 +1666,7 @@ section {
     .portfolio .portfolio-item {
         width: 280px;
         min-width: 280px;
+        max-width: 280px;
     }
     
     .portfolio .portfolio-image {
