@@ -438,9 +438,21 @@ section {
 }
 
 .services-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .services-grid {
+        display: none;
+    }
 }
 
 .service-card {
@@ -733,9 +745,21 @@ section {
 }
 
 .features-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .features-grid {
+        display: none;
+    }
 }
 
 .feature-card {
@@ -828,8 +852,20 @@ section {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .portfolio-grid {
+        display: none;
+    }
 }
 
 .portfolio-item {
@@ -1370,29 +1406,7 @@ section {
     box-shadow: 0 6px 20px rgba(3, 176, 222, 0.5);
 }
 
-/* ===== Scroll Container ===== */
-.scroll-container {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-}
-
-.scroll-container::-webkit-scrollbar {
-    display: none;
-}
-
-.scroll-track {
-    display: flex;
-    gap: 24px;
-    padding: 20px calc(50vw - 50% + 24px) 40px;
-    width: max-content;
-}
-
+/* ===== Scroll Hint ===== */
 .scroll-hint {
     display: none;
     align-items: center;
@@ -1430,18 +1444,34 @@ section {
 }
 
 @media (max-width: 992px) {
-    .scroll-hint {
-        display: flex;
-    }
-    
+    /* Scroll Container - Solo mobile */
     .scroll-container {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
     }
     
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+    
     .scroll-track {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px 20px 40px;
+        width: max-content;
         scroll-snap-align: start;
-        padding-left: 20px;
-        padding-right: 20px;
+    }
+    
+    .scroll-hint {
+        display: flex;
     }
     
     /* Services horizontal scroll */
@@ -1607,10 +1637,6 @@ section {
         gap: 24px;
     }
     
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1650,23 +1676,17 @@ section {
         padding: 0 16px;
     }
     
-    .scroll-container {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-    }
-    
     .scroll-track {
         gap: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding: 16px 16px 32px;
     }
     
     .services .service-card,
     .features .feature-card,
     .portfolio .portfolio-item {
-        width: 280px;
-        min-width: 280px;
-        max-width: 280px;
+        width: 260px;
+        min-width: 260px;
+        max-width: 260px;
     }
     
     .portfolio .portfolio-image {
