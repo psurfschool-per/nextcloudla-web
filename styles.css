@@ -1370,6 +1370,54 @@ section {
     box-shadow: 0 6px 20px rgba(3, 176, 222, 0.5);
 }
 
+/* ===== Scroll Container ===== */
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    padding: 0 24px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-track {
+    display: flex;
+    gap: 24px;
+    padding: 20px 0 40px;
+    width: max-content;
+}
+
+.scroll-hint {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 0;
+    color: var(--gray);
+    font-size: 14px;
+    animation: hintPulse 2s infinite;
+}
+
+.scroll-hint i {
+    animation: hintBounce 1.5s infinite;
+}
+
+@keyframes hintPulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+@keyframes hintBounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
     .footer-grid {
@@ -1382,6 +1430,78 @@ section {
 }
 
 @media (max-width: 992px) {
+    .scroll-hint {
+        display: flex;
+    }
+    
+    .scroll-container {
+        scroll-snap-type: x mandatory;
+        padding: 0 20px;
+    }
+    
+    .scroll-track {
+        scroll-snap-align: start;
+    }
+    
+    /* Services horizontal scroll */
+    .services .scroll-track {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .services .service-card {
+        width: 300px;
+        min-width: 300px;
+        flex-shrink: 0;
+    }
+    
+    /* Features horizontal scroll */
+    .features .scroll-track {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .features .feature-card {
+        width: 280px;
+        min-width: 280px;
+        flex-shrink: 0;
+    }
+    
+    /* Portfolio horizontal scroll */
+    .portfolio .scroll-track {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .portfolio .portfolio-item {
+        width: 300px;
+        min-width: 300px;
+        flex-shrink: 0;
+    }
+    
+    .portfolio .portfolio-image {
+        height: 280px;
+    }
+    
+    .portfolio-filters {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 0 -20px;
+        padding: 0 20px 16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    
+    .portfolio-filters::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .filter-btn {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
     .nav-toggle {
         display: flex;
     }
@@ -1523,6 +1643,25 @@ section {
     
     .container {
         padding: 0 16px;
+    }
+    
+    .scroll-container {
+        padding: 0 16px;
+    }
+    
+    .scroll-track {
+        gap: 16px;
+    }
+    
+    .services .service-card,
+    .features .feature-card,
+    .portfolio .portfolio-item {
+        width: 280px;
+        min-width: 280px;
+    }
+    
+    .portfolio .portfolio-image {
+        height: 240px;
     }
     
     .navbar {
